@@ -14,7 +14,7 @@
     margin-bottom: 4rem;
     padding-bottom: 4rem;
 
-    &__child{
+    &__child {
         width: 100%;
         display: flex;
         justify-content: space-around;
@@ -23,21 +23,24 @@
 
     &__data {
         border-top: 2px solid;
+
         div {
             font-size: 1.3rem;
             width: 9rem;
             text-align: center;
-            
+
         }
+
         &__weather {
             @extend .flex-center;
         }
-        
+
     }
 
     &__form {
         position: relative;
         margin: 2rem;
+
         button {
             padding-bottom: 1.3rem;
             outline: none;
@@ -48,6 +51,7 @@
             width: 9rem;
             border-radius: 4px;
         }
+
         div {
             @extend .flex-center;
             height: 2rem;
@@ -55,7 +59,7 @@
             text-align: center;
             border-radius: 4px;
 
-            input  {
+            input {
                 background: none;
                 outline: none;
                 width: 90%;
@@ -63,12 +67,13 @@
                 border-radius: 6px;
                 border: none;
             }
-            
+
 
             &.container__form__button {
                 line-height: 1rem;
             }
         }
+
         &__datetime {
             @extend .passive;
 
@@ -91,6 +96,7 @@
             background-color: #d5f8f8;
             border-radius: 6px;
         }
+
         &::after {
             content: " ";
             width: 100%;
@@ -101,15 +107,18 @@
             bottom: -1.9rem;
         }
     }
+
     &__inner-container {
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
         width: 100%;
+
         &.upper {
             position: fixed;
         }
+
         &.down {
             margin-top: 10.4rem;
         }
@@ -133,5 +142,51 @@
         justify-content: center;
         height: 2rem;
         align-items: center;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    .container {
+        width: 100%;
+        &__data div {
+            font-size: 0.8rem;
+
+            h1 {
+                font-size: 0.8rem;
+                margin-right: .1rem;
+            }
+        }
+
+        &__icons__icon {
+            width: 30px;
+            height: 30px;
+        }
+
+        &__data__svg {
+            width: 10px;
+            height: 10px;
+        }
+
+        &__form {
+
+            div {
+                font-size: 0.6rem;
+
+                input {
+                    font-size: 0.6rem;
+                    padding-left: 0;
+                }
+            }
+
+            button {
+                font-size: 0.6rem;
+                line-height: 0.7rem;
+            }
+            &::after {
+                bottom: -4rem;
+            }
+
+
+        }
     }
 }

@@ -5,7 +5,8 @@
 {% endblock %}
 
 {% block content %}
-<form class="weather-form" method="post">{% csrf_token %}
+<form class="weather-form" method="post">
+    {% csrf_token %}
     {{ form.as_p }}
     <input class="weather-form__sumbit" type="submit">
 </form>

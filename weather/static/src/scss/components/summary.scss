@@ -2,6 +2,7 @@
     display: flex;
     justify-content: space-between;
     padding: 0 8rem;
+    align-items: center;
 
     &__delete {
         @extend .button;
@@ -24,4 +25,20 @@
     &__humadity {transform: translateX(3rem);}
     &__temp {}
     &__delete {transform: translateX(-1.1rem);}
+}
+
+@media only screen and (max-width: 800px) {
+    .data-line {
+        padding: 2.2rem;
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    .data-line {
+        flex-direction: column;
+
+        h2, button {
+            font-size: 1rem;
+        }
+    }
 }
