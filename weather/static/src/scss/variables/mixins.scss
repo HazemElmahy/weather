@@ -1,0 +1,54 @@
+.flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.button {
+    @extend .noselect;
+    cursor: pointer;
+    transition: all 0.5s;
+    padding: 3px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.08);
+
+    &:hover {
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    }
+    &:active {
+        box-shadow: inset 0 0px 15px rgba(0, 0, 0, 0.3);
+        opacity: 0.9;
+    }
+    &:focus {
+        outline: 0;
+    }
+}
+
+.noselect {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    
+}
+
+
+.passive {
+    background-color: #a0a0a0b0;
+    border-color: white;
+    color: #252424;
+}
+
+.c_green {
+    color: $c_green;
+    margin-right: 0.5rem;
+}
+
+.c_red {
+    color: $c_red;
+    margin-right: 0.5rem;
+}
+
+
+

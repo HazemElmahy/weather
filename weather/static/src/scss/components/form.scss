@@ -1,0 +1,26 @@
+.weather-form {
+    position: absolute;
+    right: 50%;
+    top: 10%;
+    display: flex;
+    transform: translateX(59%);
+    flex-direction: column;
+    align-items: center;
+
+    input, p {
+        width: 100%;
+    }
+
+    &__sumbit {
+        @extend .button;
+        background-color: #c2ebf491;
+        border: none;
+        box-shadow: 0 0 5px #0000001f;
+        margin: 1rem;
+        margin-top: 2rem;
+        width: 50% !important;
+        font-size: 1.2rem;
+        outline: none;
+        transition: all 0.5s;
+    }
+}

@@ -1,0 +1,15 @@
+{% extends 'frontend/base.html' %}
+{% load static %}
+
+{% block style %}
+{% endblock %}
+
+{% block content %}
+<form class="weather-form" method="post">{% csrf_token %}
+    {{ form.as_p }}
+    <input class="weather-form__sumbit" type="submit">
+</form>
+{% endblock %}
+
+{% block javascript %}
+{% endblock %}

@@ -1,0 +1,27 @@
+.data-line {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 8rem;
+
+    &__delete {
+        @extend .button;
+        border: none;
+        padding: 0 1rem;
+        height: 3rem;
+        border-radius: 4px;
+        line-height: 0rem;
+    }
+}
+
+.summary__header {
+    text-align: center;
+    border-bottom: 1px solid;
+    padding-bottom: 1rem;
+}
+
+.header {
+    &__date {transform: translateX(1.5rem);}
+    &__humadity {transform: translateX(3rem);}
+    &__temp {}
+    &__delete {transform: translateX(-1.1rem);}
+}

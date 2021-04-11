@@ -1,0 +1,2 @@
+function getCookie(o){let e=null;if(document.cookie&&""!==document.cookie){const t=document.cookie.split(";");for(let n=0;n<t.length;n++){const c=t[n].trim();if(c.substring(0,o.length+1)===o+"="){e=decodeURIComponent(c.substring(o.length+1));break}}}return e}const csrftoken=getCookie("csrftoken");
+//# sourceMappingURL=csrftoken.js.map
