@@ -1,13 +1,6 @@
 @import 'variables/colors';
 @import 'variables/mixins';
 
-@import 'components/navbar';
-@import 'components/form';
-@import 'components/list';
-@import 'components/summary';
-
-
-
 body {
     font-family: 'Nunito', sans-serif;
     background: linear-gradient(45deg, $c_background_1, $c_background_2);
@@ -16,3 +9,21 @@ body {
 input {
     font-family: 'Nunito', sans-serif;
 }
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+h3 {
+    font-weight: normal;
+}
+
+@import 'components/navbar';
+@import 'components/form';
+@import 'components/list';
+@import 'components/summary';
+
+
+
+
